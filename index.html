@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zaliczenie ASP psychologia 2025</title>
+</head>
+
+<body>
+<header><h1> Projekt zaliczeniowy z zajęć Psychologii semestr letni 2024/2025 </h1></header>
+
+<main>
+<h2>Przedmiot:</h2>
+<p id="przedmiot"></p>
+<h2>Narzędzie:</h2>
+<p id="narzedzie"></p>
+<h2>Epitet:</h2>
+<p id="epitet"></p>
+    
+</main>
+<script>
+    let przedmioty = [
+        "żaba",
+        "koń",
+        "pies",
+        "pomidor",
+        "samochód",
+        "mysz",
+        "młotek",
+        "Ogórek",
+        "Bakłażan",
+        "Jabłko",
+        "Gruszka",
+        "Kruk",
+        "Ciastko",
+        "Czekolada",
+        "Tort",
+        "Koń",
+        "Piwo",
+        "Iga Świątek",
+        "Ogień",
+        "Woda",
+        "Pizza",
+        "Most zwodzony",
+        "Zeszyt od religii",
+        "Gar zupy",
+        "Krewetki",
+        "Ryba głębinowa",
+        "Pułapka na niedźwiedzie",
+        "Geralt z Rivii"
+
+
+    ];
+
+    let narzedzia = [
+        "ołówek",
+        "długopis",
+        "zielona kredka",
+        "flamaster",
+        "czarny cienkopis",
+        "szary marker",
+        "czerwony marker",
+        "żółty flamaster",
+        "kredka",
+        "ołówek miękki",
+        "ołówek twardy",
+        "czarny żelopis lub długopis"
+    ];
+
+    let epitety = [
+        "ładny",
+        "smutny",
+        "wściekły",
+        "wystraszony",
+        "brzydki",
+        "szalony",
+        "W żałobie po pogrzebie",
+        "Zadowolony z życia",
+        "Spełniony",
+        "Agresywny",
+        "Przyćpany",
+        "Zkacowany",
+        "Futurystyczny"
+    ];
+
+
+    let przedmiot = document.getElementById("przedmiot");
+    let narzedzie = document.getElementById("narzedzie");
+    let epitet = document.getElementById("epitet");
+
+    przedmiot.innerHTML = przedmioty[Math.floor(Math.random()*przedmioty.length)];
+    narzedzie.innerHTML = narzedzia[Math.floor(Math.random()*narzedzia.length)];
+    epitet.innerHTML = epitety[Math.floor(Math.random()*epitety.length)];
+</script>
+
+</body>
+
+</html>
